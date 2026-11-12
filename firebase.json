@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "agri2connect-d3579",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/.*/**",
+      "**/node_modules/**",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
+    ]
+  }
+}
