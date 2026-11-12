@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "agri2connect-d3579",
+    "site": "agri2connect",
     "public": ".",
     "ignore": [
       "firebase.json",
