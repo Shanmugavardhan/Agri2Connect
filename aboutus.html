@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us — Agri2Connect</title>
+<meta content="Learn about Agri2Connect's vision, demand-driven agricultural methodology, and our pilot operations in Tirupati, Andhra Pradesh." name="description"/>
+<link href="https://agri2connect.web.app/aboutus.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://agri2connect.web.app/aboutus.html" property="og:url"/>
+<meta content="About Us — Agri2Connect" property="og:title"/>
+<meta content="Reimagining how agriculture connects through demand-led aggregation, field logistics, and transparent market linkage." property="og:description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#aed0a1",
+            "tertiary-fixed": "#c9ecbb",
+            "tertiary-container": "#2e4b27",
+            "secondary": "#106c3c",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#177140",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#99bb8d",
+            "inverse-primary": "#9cd3af",
+            "on-background": "#151e18",
+            "surface-container": "#e6f1e7",
+            "inverse-surface": "#29332c",
+            "primary-fixed-dim": "#9cd3af",
+            "on-surface-variant": "#414942",
+            "on-primary-fixed-variant": "#1b5035",
+            "primary-fixed": "#b7efca",
+            "surface-container-low": "#ecf6ed",
+            "surface-dim": "#d3ddd3",
+            "on-secondary-fixed-variant": "#00522b",
+            "on-surface": "#151e18",
+            "tertiary": "#183413",
+            "on-secondary-fixed": "#00210e",
+            "on-error-container": "#93000a",
+            "outline": "#717972",
+            "on-tertiary-fixed-variant": "#314e29",
+            "surface-container-highest": "#dbe5dc",
+            "surface-bright": "#f2fcf2",
+            "inverse-on-surface": "#e9f3ea",
+            "on-primary-container": "#86bd9a",
+            "primary-container": "#174d32",
+            "secondary-fixed": "#a0f5b8",
+            "surface-container-high": "#e1ebe1",
+            "surface-tint": "#34684b",
+            "primary": "#00351e",
+            "background": "#f2fcf2",
+            "surface-variant": "#dbe5dc",
+            "surface": "#f2fcf2",
+            "error": "#ba1a1a",
+            "on-primary-fixed": "#002111",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#9df2b5",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#052103",
+            "outline-variant": "#c0c9c0",
+            "secondary-fixed-dim": "#84d89d",
+            "error-container": "#ffdad6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-3xl": "6rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "4rem"
+          },
+          "fontFamily": {
+            "title-lg": ["Manrope"],
+            "headline-lg-mobile": ["Manrope"],
+            "title-md": ["Manrope"],
+            "headline-lg": ["Manrope"],
+            "headline-md": ["Manrope"],
+            "display-mobile": ["Manrope"],
+            "display": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "headline-sm": ["Manrope"],
+            "label-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "body-sm": ["Manrope"]
+          },
+          "fontSize": {
+            "title-lg": ["1.25rem", { lineHeight: "1.4", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["1.875rem", { lineHeight: "1.25", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "title-md": ["1.125rem", { lineHeight: "1.45", letterSpacing: "0", fontWeight: "600" }],
+            "headline-lg": ["2.5rem", { lineHeight: "1.2", letterSpacing: "-0.025em", fontWeight: "700" }],
+            "headline-md": ["2rem", { lineHeight: "1.25", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-mobile": ["2.25rem", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "800" }],
+            "display": ["3.5rem", { lineHeight: "1.15", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "body-lg": ["1.125rem", { lineHeight: "1.65", letterSpacing: "0", fontWeight: "400" }],
+            "label-lg": ["0.875rem", { lineHeight: "1.3", letterSpacing: "0.02em", fontWeight: "600" }],
+            "headline-sm": ["1.5rem", { lineHeight: "1.3", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "label-md": ["0.75rem", { lineHeight: "1.3", letterSpacing: "0.04em", fontWeight: "600" }],
+            "label-sm": ["0.6875rem", { lineHeight: "1.2", letterSpacing: "0.06em", fontWeight: "700" }],
+            "body-md": ["1rem", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
+            "body-sm": ["0.875rem", { lineHeight: "1.5", letterSpacing: "0.005em", fontWeight: "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased text-body-md font-body-md selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- STICKY TOP APP BAR (From Shared Components JSON) -->
+<header class="top-0 sticky z-50 bg-surface-container-lowest/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm dark:shadow-none border-b border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-20 w-full">
+<!-- Brand Logo / Wordmark -->
+<a class="text-title-lg font-title-lg font-bold text-primary dark:text-inverse-primary tracking-tight flex items-center gap-3" href="index.html">
+<!-- Logo Image Placeholder mapping -->
+<span class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center p-1 border border-outline-variant/30">
+<svg aria-hidden="true" class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+<path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88"></path>
+<path d="m10 10-2.5-2.5a1 1 0 0 0-3 3l3.88 3.88a3 3 0 0 0 4.24 0l.88-.88"></path>
+<path d="m13 7-2-2a1 1 0 0 0-3 3"></path>
+</svg>
+</span>
+<span class="text-title-lg font-title-lg text-primary tracking-tight">Agri2Connect</span>
+</a>
+<!-- Navigation Links -->
+<nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant text-title-md font-title-md hover:text-primary dark:hover:text-primary-fixed transition-colors pb-1" href="index.html">Home</a>
+<!-- Active Tab: About Us -->
+<a aria-current="page" class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed text-title-md font-title-md pb-1" href="aboutus.html">About Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-title-md font-title-md hover:text-primary dark:hover:text-primary-fixed transition-colors pb-1" href="contactus.html">Contact Us</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-primary-container text-on-primary text-label-lg font-label-lg transition-all duration-150 hover:bg-secondary active:scale-[0.99] shadow-sm" href="contactus.html">
+          Let's Connect
+        </a>
+<!-- Mobile Menu Trigger -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open Navigation" class="md:hidden p-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined" data-icon="menu" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Nav Drawer -->
+<nav aria-label="Mobile Navigation" class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-lowest px-6 py-4 space-y-2" id="mobile-menu">
+<a class="block py-2 text-on-surface-variant hover:text-primary text-title-md font-title-md transition-colors" href="index.html">Home</a>
+<a aria-current="page" class="block py-2 text-primary text-title-md font-title-md font-semibold" href="aboutus.html">About Us</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary text-title-md font-title-md transition-colors" href="contactus.html">Contact Us</a>
+<a class="mt-2 inline-flex w-full items-center justify-center bg-primary-container text-on-primary text-label-lg font-label-lg px-6 py-3 rounded-lg hover:bg-secondary transition-colors" href="contactus.html">
+        Let's Connect
+      </a>
+</nav>
+</header>
+<main>
+<!-- SECTION 1: ABOUT HERO -->
+<section class="relative pt-12 pb-20 md:py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-primary border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm tracking-wide">ORGANIZATIONAL CHARTER &amp; VALUES</span>
+</div>
+<h1 class="text-headline-md md:text-display font-display text-primary tracking-tight text-balance">
+              Reimagining How Agriculture Connects.
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant text-balance max-w-2xl">
+              Agri2Connect is an initiative focused on creating stronger connections across the agricultural ecosystem through coordinated supply, services, infrastructure and market access.
+            </p>
+<div class="pt-4 flex flex-wrap items-center gap-6 border-t border-outline-variant/40">
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm text-primary font-bold">100%</span>
+<span class="text-label-md font-label-md text-on-surface-variant">Demand-Led Aggregation</span>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/40 hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm text-primary font-bold">Integrated</span>
+<span class="text-label-md font-label-md text-on-surface-variant">Procurement to Retail</span>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/40 hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm text-primary font-bold">Direct Gate</span>
+<span class="text-label-md font-label-md text-on-surface-variant">Transparency Standards</span>
+</div>
+</div>
+</div>
+<!-- Editorial Imagery Column -->
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 bg-surface-container-lowest p-3">
+<div class="relative h-[420px] rounded-xl overflow-hidden">
+<img alt="Agricultural producer in a rural field" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk3S__ajbVEkBsn-WM8hutedqDQbsqhcgsDAgnqp6Xtw7UMSDm0nxZGDVm-XIJNQYAMjBRsqaSe90Cg0I82IRZU3M3GJLPOHiBVL7y2JX78hyzYhE5tr7Ebba60eYJFCktJUK4VQqzbwgbrTKnzE0c6qjDiWkjTWRZohSCz7q6waNAD2oM-XLYu1oIcZ3-YzPPTqCcn0UwF_VslAmOhRxVXXSJt__phWHLk6E7lYroJoVvbvB2IW30Sg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-on-primary">
+<span class="text-label-sm font-label-sm bg-surface-container-lowest/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 mb-2 inline-block">Empowerment at the Roots</span>
+<p class="text-title-md font-title-md font-semibold text-white drop-shadow-sm">Direct market linkage, preserving crop value and human dignity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: OUR VISION -->
+<section class="py-20 md:py-28 bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-3xl mb-16">
+<span class="text-label-md font-label-md font-bold text-secondary uppercase tracking-wider block mb-2">Our Vision</span>
+<h2 class="text-headline-sm md:text-headline-lg font-headline-lg text-primary tracking-tight">
+            An Integrated Ecosystem for Agriculture.
+          </h2>
+<p class="mt-4 text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            Our long-term objective is to transition isolated agricultural workflows into a resilient, coordinated matrix. We bring disparate rural smallholders, cold storage providers, urban buyers, and logistical specialists under a single, reliable operational baseline.
+          </p>
+</div>
+<!-- Vision Bento-Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Vision Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="hub">hub</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary font-bold">Bridging Fragmented Realities</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                Indian agriculture has long operated with disconnected nodes. We build operational pipelines where communication flows seamlessly between farm gates, collection hubs, and institutional markets.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center text-secondary text-label-md font-label-md">
+<span>Systemic Interconnectivity</span>
+<span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Vision Card 2 (Editorial Highlight) -->
+<div class="bg-primary-container text-on-primary p-8 rounded-xl border border-secondary/30 shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-2xl" data-icon="balance">balance</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-white font-bold">Equitable Economic Parity</h3>
+<p class="text-body-md font-body-md text-on-primary/90">
+                Eliminating layers of rent-seeking intermediaries to ensure producers capture genuine value for high-grade yields, while retail markets receive guaranteed quality and prompt dispatch.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/10 flex items-center text-secondary-fixed text-label-md font-label-md">
+<span>Fair Market Participation</span>
+<span class="material-symbols-outlined ml-1 text-sm" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Vision Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="text-title-lg font-title-lg text-primary font-bold">Perishability Mitigation</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                Mitigating harvest loss through synchronized demand intelligence, swift local sorting, and planned cold-corridor logistics mapped directly against committed consumption.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center text-secondary text-label-md font-label-md">
+<span>Post-Harvest Security</span>
+<span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE THINKING BEHIND AGRI2CONNECT -->
+<section class="py-20 md:py-28">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Image Asset -->
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container-lowest p-3 shadow-sm">
+<div class="h-[460px] rounded-xl overflow-hidden relative">
+<img alt="Indian agricultural workers sorting fresh green produce together in a sunlit field shelter" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6yu3bq1F_Whry3HUojMxbo4u-bu_F7mtQBywAm6HGkjvGh_5Ab3aoxKxJrnjSrAoddFJXJ9gti9hVgc9ELPoiJh1ukQFCHa6E_t-hQl5x3Av22svHxHQDMjL1_R9eWhFQ4KSoWvz6aFrsy_OuA5WfaJ1qKI1IM3Y1Tr9o6oKobDbklafoxy2-dRPXAA_5paZmlXdPP9z0EJ2x2yaZFLHd9haKwmkfe98KVOqaKetd"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="p-4 bg-surface-container-lowest">
+<p class="text-label-md font-label-md text-on-surface-variant italic">
+                  Collaborative field aggregation: replacing isolation with dependable operational coordination.
+                </p>
+</div>
+</div>
+</div>
+<!-- Thought Leadership Content -->
+<div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+<span class="text-label-md font-label-md font-bold text-secondary uppercase tracking-wider block">Foundational Philosophy</span>
+<h2 class="text-headline-sm md:text-headline-lg font-headline-lg text-primary tracking-tight">
+              The Thinking Behind Agri2Connect.
+            </h2>
+<div class="relative pl-6 border-l-4 border-secondary my-6">
+<blockquote class="text-title-lg font-title-lg text-primary italic leading-snug">
+                "Agriculture should not be approached as isolated activities. Farmers, suppliers, procurement networks, services, storage, logistics and buyers depend on one another. Agri2Connect aims to connect these participants through a coordinated business ecosystem."
+              </blockquote>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              When agriculture is addressed as disconnected stages—farming on one end and food consumption on the other—unpredictability thrives. Prices swing violently, logistics remain underutilized, and produce degrades before reaching buyers.
+            </p>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Agri2Connect rejects the notion of speculative supply pushes. By unifying market demand intelligence with ground-level cultivation timelines, we create a synchronized, mutual-benefit flow for all agrarian stakeholders.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="sync_alt">sync_alt</span>
+<div>
+<h3 class="font-title-md text-primary font-bold text-sm">Unified Flow</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Farming calendars synchronized with verified retail cycles.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="shield">shield</span>
+<div>
+<h3 class="font-title-md text-primary font-bold text-sm">Risk Distribution</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Absorbing volatility via structured procurement commitments.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: OUR APPROACH (FOUR CORE PRINCIPLES) -->
+<section class="py-20 md:py-28 bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-label-md font-label-md font-bold text-secondary uppercase tracking-wider block mb-2">Our Operating Architecture</span>
+<h2 class="text-headline-sm md:text-headline-lg font-headline-lg text-primary tracking-tight">
+            Guiding Principles of Our Model
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">
+            Grounded methodologies developed for operational clarity, economic viability, and repeatable execution.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Principle Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-md bg-secondary/10 flex items-center justify-center text-secondary mb-5">
+<span class="font-bold text-lg">01</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-primary mb-2">Demand-Driven Operations</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Aligning procurement and distribution with confirmed retail and market requirements to prevent post-harvest deadweight and speculative dumping.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Zero Blind Sourcing</span>
+</div>
+</div>
+<!-- Principle Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-md bg-secondary/10 flex items-center justify-center text-secondary mb-5">
+<span class="font-bold text-lg">02</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-primary mb-2">Connected Agricultural Networks</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Bridging disparate participants into a cooperative, transparent value chain where information, grading parameters, and fair tariffs are fully clear.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Cooperative Transparency</span>
+</div>
+</div>
+<!-- Principle Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-md bg-secondary/10 flex items-center justify-center text-secondary mb-5">
+<span class="font-bold text-lg">03</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-primary mb-2">Operational Efficiency</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Eliminating coordination friction, reducing transit delays, and optimizing produce handling across primary sortation hubs to preserve freshness.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Streamlined Turnaround</span>
+</div>
+</div>
+<!-- Principle Card 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-md bg-secondary/10 flex items-center justify-center text-secondary mb-5">
+<span class="font-bold text-lg">04</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-primary mb-2">Evidence-Based Expansion</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Scaling infrastructure and physical capabilities only as validated business demand proves viability, ensuring financial resilience and discipline.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Pragmatic Capital Scaling</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: OUR JOURNEY & PILOT IN TIRUPATI -->
+<section class="py-20 md:py-28" id="pilot">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-label-md font-label-md font-bold text-secondary uppercase tracking-wider block">Real-World Execution</span>
+<h2 class="text-headline-sm md:text-headline-lg font-headline-lg text-primary tracking-tight">
+              A Phased, Grounded Journey.
+            </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              We do not believe in paper projections or inflated milestone dates. We build from ground reality up, testing each assumption in real commercial environments before advancing to larger systemic layers.
+            </p>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<span class="text-title-md font-title-md font-bold text-primary">Tirupati Pilot Corridor</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Our foundational footprint begins with a focused retail-demand pilot in Tirupati, India—anchoring reliable B2B fresh-produce delivery loops with regional trade partners and local farmer aggregates.
+              </p>
+</div>
+</div>
+<!-- Phased Roadmap Timeline -->
+<div class="lg:col-span-7 space-y-8 pl-0 lg:pl-6">
+<!-- Phase 1 Node -->
+<div class="relative pl-10 border-l-2 border-secondary/40 pb-8 last:pb-0">
+<div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-xs ring-4 ring-surface">
+                1
+              </div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between gap-3 mb-2">
+<h3 class="text-title-md font-title-md font-bold text-primary">Phase 1: Demand Validation &amp; Local Sourcing</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-xs font-semibold shrink-0">Active Pilot</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                  Direct retail buyer onboarding in Tirupati. Validating daily procurement order flows, testing consistency metrics, and establishing trusted relationships with primary local farmers and aggregate collection centers.
+                </p>
+</div>
+</div>
+<!-- Phase 2 Node -->
+<div class="relative pl-10 border-l-2 border-secondary/40 pb-8 last:pb-0">
+<div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-surface-container-highest border border-outline text-primary font-bold text-xs ring-4 ring-surface">
+                2
+              </div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between gap-3 mb-2">
+<h3 class="text-title-md font-title-md font-bold text-primary">Phase 2: Volume Consolidation &amp; Mandi Integration</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-xs font-semibold shrink-0">Scheduled</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                  Consolidating recurring volume across tier-2 urban demand centers. Evaluating unit economics for wholesale mandi integration and instituting standardized digital weighment and QA protocols.
+                </p>
+</div>
+</div>
+<!-- Phase 3 Node -->
+<div class="relative pl-10 border-l-2 border-transparent last:pb-0">
+<div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-surface-container-highest border border-outline text-primary font-bold text-xs ring-4 ring-surface">
+                3
+              </div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between gap-3 mb-2">
+<h3 class="text-title-md font-title-md font-bold text-primary">Phase 3: Specialized Infrastructure Deployment</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-xs font-semibold shrink-0">Roadmap</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                  Gradual capital expansion into dedicated sorting, cold chain handling, and logistics hubs only after commercial revenue stability and route margins have proved self-sustaining.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CLOSING CTA -->
+<section class="py-20 md:py-24 bg-surface-container border-t border-outline-variant/30" id="contact">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="handshake">handshake</span>
+<span class="text-label-sm font-label-sm font-bold uppercase tracking-wider">Collective Value Creation</span>
+</div>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary tracking-tight max-w-3xl mx-auto">
+          Be Part of a More Connected Agricultural Ecosystem.
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4 mb-8">
+          We welcome active dialogue with retail buyers, agricultural logistics specialists, progressive Farmer Producer Organisations (FPOs), and institutional partners aligned with our mission.
+        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-primary-container text-on-primary text-label-lg font-label-lg transition-all duration-150 hover:bg-secondary active:scale-[0.99] shadow-sm" href="contactus.html">
+<span>Connect With Us</span>
+<span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-surface-container-lowest text-primary border border-primary text-label-lg font-label-lg transition-all duration-150 hover:bg-primary/5 active:scale-[0.99]" href="#pilot">
+<span>Explore Pilot Results</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (From Shared Components JSON) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-16 w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-outline-variant/20">
+<!-- Brand Identity Column -->
+<div class="md:col-span-6 space-y-4">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center p-1 border border-outline-variant/30">
+<svg aria-hidden="true" class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+<path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+<path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88"></path>
+<path d="m10 10-2.5-2.5a1 1 0 0 0-3 3l3.88 3.88a3 3 0 0 0 4.24 0l.88-.88"></path>
+<path d="m13 7-2-2a1 1 0 0 0-3 3"></path>
+</svg>
+</span>
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-inverse-primary">Agri2Connect</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant max-w-sm">
+            Bridging Indian agriculture through demand-first coordination, reliable field logistics, and shared economic viability.
+          </p>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-3 space-y-3">
+<h3 class="text-title-md font-title-md text-primary dark:text-inverse-primary">Navigation</h3>
+<ul class="space-y-2 text-label-md font-label-md">
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all block hover:translate-x-0.5 duration-200" href="index.html">Home</a>
+</li>
+<li>
+<a class="text-primary dark:text-primary-fixed text-label-md font-title-md block" href="aboutus.html">About Us</a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all block hover:translate-x-0.5 duration-200" href="contactus.html">Contact Us</a>
+</li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-3 space-y-3">
+<h3 class="text-title-md font-title-md text-primary dark:text-inverse-primary">Connect Directly</h3>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+<li>Shanmuga Vardhan K, Managing Director</li>
+<li>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors" href="mailto:shanmugavardhan5@gmail.com">shanmugavardhan5@gmail.com</a>
+</li>
+<li>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors" href="tel:+919700677399">+91 9700677399</a>
+</li>
+<li>Tirupati, Andhra Pradesh, India</li>
+</ul>
+</div>
+</div>
+<!-- Copyright Subtext -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-on-surface-variant dark:text-surface-variant font-body-sm text-xs gap-4">
+<p>© 2025 Agri2Connect Inc. All rights reserved. One Ecosystem. Every Agricultural Connection.</p>
+<div class="flex items-center gap-6">
+<span>Grounded in Tirupati, India</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Enterprise Agritech Architecture</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    (function () {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (!btn || !menu || !icon) return;
+
+      function setOpen(open) {
+        menu.classList.toggle('hidden', !open);
+        btn.setAttribute('aria-expanded', String(open));
+        icon.textContent = open ? 'close' : 'menu';
+      }
+
+      btn.addEventListener('click', function () {
+        setOpen(menu.classList.contains('hidden'));
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+          setOpen(false);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
