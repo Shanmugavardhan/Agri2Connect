@@ -4,13 +4,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Make The First Connection — Agri2Connect</title>
+<title>Make The Connection — Agri2Connect</title>
 <meta content="Connect with Agri2Connect. Whether you grow, supply, move, sell, or invest in agriculture, discover where you fit in our connected agricultural ecosystem." name="description"/>
 <link href="https://agri2connect.web.app/contactus.html" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="https://agri2connect.web.app/contactus.html" property="og:url"/>
-<meta content="Make The First Connection — Agri2Connect" property="og:title"/>
-<meta content="Whether you grow, supply, move, sell or invest in agriculture, there's a connection waiting to be made. Let's explore what we can build together." property="og:description"/>
+<meta content="Make The Connection — Agri2Connect" property="og:title"/>
+<meta content="Whether you grow, supply, move, sell or invest in agriculture, there's a connection waiting to be made. Let's start a conversation." property="og:description"/>
 <!-- Google Fonts: Manrope -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -125,39 +125,6 @@
       vertical-align: middle;
       line-height: 1;
     }
-    
-    /* Interactive Node States */
-    .eco-node {
-      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .eco-node.is-active {
-      transform: translateY(-2px) scale(1.04);
-      box-shadow: 0 10px 25px -5px rgba(16, 108, 60, 0.25), 0 8px 10px -6px rgba(16, 108, 60, 0.2);
-    }
-    .eco-node.is-dimmed {
-      opacity: 0.38;
-      filter: grayscale(40%);
-    }
-
-    /* Animated Connection Line Stroke */
-    @keyframes dashflow {
-      to {
-        stroke-dashoffset: -32;
-      }
-    }
-    .flow-line-active {
-      stroke-dasharray: 6 6;
-      animation: dashflow 1.4s linear infinite;
-    }
-    
-    @media (prefers-reduced-motion: reduce) {
-      .flow-line-active {
-        animation: none;
-      }
-      .eco-node {
-        transition: none;
-      }
-    }
   </style>
 </head>
 <body class="bg-background text-on-surface antialiased text-body-md font-body-md selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col justify-between">
@@ -198,413 +165,141 @@
 
 <main class="flex-grow">
 <!-- ==================================================
-     SECTION A — THE HOOK & SIGNATURE GUERRILLA INTERACTION
+     HERO & INTERACTIVE CONNECTION CONTAINER
+     Exact visual layout matching approved design
      ================================================== -->
-<section class="relative pt-12 pb-16 md:pt-20 md:pb-24 border-b border-outline-variant/30 overflow-hidden bg-gradient-to-b from-surface-container-low/60 to-background" id="the-hook">
-<div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16">
-<!-- Header & Central Narrative -->
-<div class="max-w-4xl mx-auto text-center space-y-5 mb-12 md:mb-16">
-<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/60 border border-secondary/25 text-primary text-label-sm font-label-sm font-bold tracking-wider uppercase">
-<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-          MAKE THE FIRST CONNECTION
-        </div>
-<h1 class="text-headline-lg-mobile md:text-display font-headline-lg-mobile md:font-display text-primary tracking-tight">
+<section class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 md:pt-12 md:pb-20">
+<div class="rounded-3xl overflow-hidden shadow-xl border border-outline-variant/40 bg-surface-container-lowest">
+
+<!-- TOP SECTION: DARK GREEN BRAND HERO -->
+<div class="bg-[#174D32] text-white p-6 sm:p-10 md:p-12 relative">
+<!-- Top Row: Eyebrow Badge & Step Indicator -->
+<div class="flex items-center justify-between gap-4 mb-6">
+<span class="inline-flex items-center px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-[#a0f5b8] text-[11px] font-bold tracking-wider uppercase">
+            THE AGRI2CONNECT EXPERIENCE
+          </span>
+<span class="text-white/70 text-[12px] font-mono tracking-widest uppercase">
+            01 / MAKE A CONNECTION
+          </span>
+</div>
+
+<!-- Main Headline & Subtitle -->
+<h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
           Every Connection Starts Somewhere.
         </h1>
-<p class="text-title-lg font-title-lg text-secondary font-bold">
+<p class="text-lg sm:text-2xl font-semibold text-[#a0f5b8] mt-3">
           Where do you fit in agriculture?
         </p>
-<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-3xl mx-auto">
-          From the people who grow to the businesses that move, process and sell agricultural produce, Agri2Connect is bringing the agricultural ecosystem closer together. Whether you grow, supply, move, sell or invest in agriculture, there's a connection waiting to be made.
+<p class="text-sm sm:text-base text-white/80 mt-2 leading-relaxed max-w-2xl">
+          Whether you grow, supply, move, sell or invest in agriculture, there's a connection waiting to be made.
         </p>
-<div class="pt-2 flex flex-wrap items-center justify-center gap-4 text-label-sm font-label-sm text-on-surface-variant">
-<span class="inline-flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-full border border-outline-variant/40 shadow-xs">
-<span class="material-symbols-outlined text-secondary text-base">touch_app</span>
-            Select your role below to map your ecosystem path
-          </span>
-<a class="inline-flex items-center gap-1 text-secondary font-bold hover:underline" href="#connection-form">
-            Skip straight to message form
-            <span class="material-symbols-outlined text-base">arrow_downward</span>
-</a>
+
+<!-- Aerial Mandi / Wholesale Market Photography -->
+<div class="mt-6 rounded-2xl overflow-hidden border border-white/15 shadow-lg bg-primary">
+<img alt="Bustling Indian wholesale agricultural mandi produce market with vegetable crates and transport vehicles" class="w-full h-auto object-cover max-h-[380px]" src="assets/images/contact-mandi-market.jpg"/>
+</div>
+
+<!-- Caption Below Image -->
+<div class="mt-6 space-y-1">
+<h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+            Find your place in the ecosystem.
+          </h2>
+<p class="text-sm sm:text-base text-white/80">
+            One introduction could be the beginning of something bigger.
+          </p>
 </div>
 </div>
 
-<!-- SIGNATURE GUERRILLA-MARKETING INTERACTION:
-     "Find Your Place in the Agricultural Ecosystem" -->
-<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl md:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm relative overflow-hidden" id="ecosystem-canvas">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-outline-variant/20 mb-8">
-<div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-xl">hub</span>
-<h2 class="text-title-lg font-title-lg text-primary font-bold">Find Your Place in the Agricultural Ecosystem</h2>
-</div>
-<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
-              An interactive view of agricultural production, transit, commercial off-take and supporting capabilities.
-            </p>
-</div>
-<div class="inline-flex items-center gap-2 bg-surface-container-low px-3.5 py-1.5 rounded-full border border-outline-variant/30 text-label-sm font-label-sm text-primary font-semibold self-start sm:self-auto shrink-0" id="ecosystem-status-pill">
-<span class="w-2 h-2 rounded-full bg-secondary"></span>
-<span id="ecosystem-status-text">Explore All Nodes or Choose Your Fit</span>
-</div>
-</div>
+<!-- BOTTOM SECTION: INTERACTIVE STAKEHOLDER SELECTOR -->
+<div class="bg-[#edf7ef]/70 p-6 sm:p-10 border-t border-outline-variant/30">
+<h3 class="text-xl sm:text-2xl font-bold text-primary mb-6">
+          What's your connection?
+        </h3>
 
-<!-- Multi-layer Interconnected Nodes Diagram -->
-<div class="space-y-6">
-<!-- Top Supporting Layer: Inputs & Field Operations -->
-<div class="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 text-center">
-<span class="text-label-sm font-label-sm font-bold uppercase tracking-wider text-outline w-full md:w-auto text-left md:mr-2">Supporting Inputs &amp; Operations:</span>
-
-<!-- Node: Agricultural Suppliers -->
-<div class="eco-node flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/40 text-primary font-bold text-label-md cursor-pointer hover:border-secondary shadow-2xs" data-eco-node="suppliers" id="node-suppliers">
-<span class="w-7 h-7 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30">
-<span class="material-symbols-outlined text-base">potted_plant</span>
-</span>
-<span>Agricultural Suppliers</span>
-<span class="text-[10px] uppercase font-semibold text-secondary px-1.5 py-0.5 bg-secondary-container/40 rounded">Inputs</span>
-</div>
-
-<!-- Node: Labour & Mechanisation -->
-<div class="eco-node flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/40 text-primary font-bold text-label-md cursor-pointer hover:border-secondary shadow-2xs" data-eco-node="services" id="node-services">
-<span class="w-7 h-7 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30">
-<span class="material-symbols-outlined text-base">engineering</span>
-</span>
-<span>Labour &amp; Mechanisation</span>
-<span class="text-[10px] uppercase font-semibold text-secondary px-1.5 py-0.5 bg-secondary-container/40 rounded">Support</span>
-</div>
-</div>
-
-<!-- Primary Produce Flow (7 Core Steps with Flowing Connectors) -->
-<div class="py-2">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-secondary text-base">timeline</span>
-<span class="text-label-sm font-label-sm font-bold uppercase tracking-wider text-primary">Primary Produce Flow &amp; Supply Corridors</span>
-</div>
-<!-- Responsive Flow Container: Scrollable / Grid -->
-<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 sm:gap-3">
-<!-- 1. Farmers & FPOs -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border-2 border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="farmers" id="node-farmers">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">agriculture</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Farmers &amp; FPOs</p>
-<span class="text-[10px] text-on-surface-variant">Production</span>
-<span class="text-[10px] text-secondary font-semibold mt-1">01 • Source</span>
-</div>
-
-<!-- 2. Procurement -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="procurement" id="node-procurement">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">receipt_long</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Procurement</p>
-<span class="text-[10px] text-on-surface-variant">Intake</span>
-<span class="text-[10px] text-outline font-semibold mt-1">02 • Verify</span>
-</div>
-
-<!-- 3. Aggregation -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="aggregation" id="node-aggregation">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">hub</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Aggregation</p>
-<span class="text-[10px] text-on-surface-variant">Batching</span>
-<span class="text-[10px] text-outline font-semibold mt-1">03 • Consolidate</span>
-</div>
-
-<!-- 4. Storage -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="storage" id="node-storage">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">warehouse</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Storage</p>
-<span class="text-[10px] text-on-surface-variant">Holding</span>
-<span class="text-[10px] text-outline font-semibold mt-1">04 • Preserve</span>
-</div>
-
-<!-- 5. Logistics -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border-2 border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="logistics" id="node-logistics">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">local_shipping</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Logistics</p>
-<span class="text-[10px] text-on-surface-variant">Transit</span>
-<span class="text-[10px] text-secondary font-semibold mt-1">05 • Move</span>
-</div>
-
-<!-- 6. Retailers & Traders -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border-2 border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all" data-eco-node="retailers" id="node-retailers">
-<span class="w-9 h-9 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30 shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">storefront</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Retailers &amp; Traders</p>
-<span class="text-[10px] text-on-surface-variant">Commerce</span>
-<span class="text-[10px] text-secondary font-semibold mt-1">06 • Sell</span>
-</div>
-
-<!-- 7. Consumers -->
-<div class="eco-node p-3 rounded-xl bg-surface-container-low/70 border border-outline-variant/40 text-center flex flex-col items-center justify-between min-h-[110px] cursor-pointer hover:border-secondary transition-all col-span-2 sm:col-span-1" data-eco-node="consumers" id="node-consumers">
-<span class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-xs mb-1">
-<span class="material-symbols-outlined text-lg">shopping_bag</span>
-</span>
-<p class="text-[12px] font-bold text-primary leading-tight">Consumers</p>
-<span class="text-[10px] text-on-surface-variant">End Market</span>
-<span class="text-[10px] text-secondary font-semibold mt-1">07 • Demand</span>
-</div>
-</div>
-</div>
-
-<!-- Bottom Layer: Commercial Buyers & Settlements -->
-<div class="pt-2 flex flex-wrap items-center justify-between gap-4">
-<div class="flex flex-wrap items-center gap-3">
-<span class="text-label-sm font-label-sm font-bold uppercase tracking-wider text-outline mr-2">Commercial &amp; Financial Integration:</span>
-
-<!-- Node: Businesses & Processors -->
-<div class="eco-node flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/40 text-primary font-bold text-label-md cursor-pointer hover:border-secondary shadow-2xs" data-eco-node="businesses" id="node-businesses">
-<span class="w-7 h-7 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30">
-<span class="material-symbols-outlined text-base">corporate_fare</span>
-</span>
-<span>Businesses &amp; Processors</span>
-<span class="text-[10px] uppercase font-semibold text-secondary px-1.5 py-0.5 bg-secondary-container/40 rounded">Commercial Off-take</span>
-</div>
-
-<!-- Node: Payments & Settlements -->
-<div class="eco-node flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/40 text-primary font-bold text-label-md cursor-pointer hover:border-secondary shadow-2xs" data-eco-node="payments" id="node-payments">
-<span class="w-7 h-7 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center border border-outline-variant/30">
-<span class="material-symbols-outlined text-base">account_balance_wallet</span>
-</span>
-<span>Payments &amp; Settlements</span>
-<span class="text-[10px] uppercase font-semibold text-secondary px-1.5 py-0.5 bg-secondary-container/40 rounded">Cross-Cutting</span>
-</div>
-</div>
-
-<!-- Interactive Reset Pill -->
-<button class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-secondary hover:text-primary font-semibold transition-colors ml-auto" id="reset-eco-btn" type="button">
-<span class="material-symbols-outlined text-base">restart_alt</span>
-<span>Reset Ecosystem View</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ==================================================
-     SECTION B — FIND YOUR CONNECTION (6 INTERACTIVE CARDS)
-     ================================================== -->
-<section class="py-16 md:py-24 border-b border-outline-variant/30 bg-surface-container-lowest" id="find-your-connection">
-<div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16">
-<div class="max-w-3xl mb-12">
-<span class="text-secondary font-label-lg text-label-lg font-bold uppercase tracking-wider mb-2 block">Interactive Role Selector</span>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary tracking-tight mb-4">
-          What's Your Connection to Agriculture?
-        </h2>
-<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-          Tell us where you belong. Let's discover how we can connect. Click your role below to see where you fit in the ecosystem and shape our conversation.
-        </p>
-</div>
-
-<!-- 6 Interactive Stakeholder Cards (3x2 Grid on desktop, 2-col on tablet/mobile) -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- CARD 01: Farmers & FPOs -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Farmers &amp; FPOs" data-key="farmers" id="card-farmers" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
+<!-- 6 Stakeholder Cards (2-column layout matching design) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Card 1: I grow -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Farmers &amp; FPOs" data-key="farmers" id="card-farmers" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-2xl">eco</span>
 </span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
-</div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Farmers &amp; FPOs</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Grow</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I produce agricultural goods and want better market connections.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Farm-Gate Linkages</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I grow</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Farmer / FPO</p>
 </div>
 </button>
 
-<!-- CARD 02: Agricultural Suppliers -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Agricultural Suppliers" data-key="suppliers" id="card-suppliers" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-2xl">potted_plant</span>
+<!-- Card 2: I supply -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Agricultural Suppliers" data-key="suppliers" id="card-suppliers" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">inventory_2</span>
 </span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
-</div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Agricultural Suppliers</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Supply</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I provide agricultural inputs, equipment or related products.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Input Distribution Channels</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I supply</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Agricultural inputs</p>
 </div>
 </button>
 
-<!-- CARD 03: Retailers & Traders -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Retailers &amp; Traders" data-key="retailers" id="card-retailers" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-2xl">storefront</span>
-</span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
-</div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Retailers &amp; Traders</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Sell</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I operate in agricultural retail, wholesale or produce trading.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Predictable Produce Sourcing</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</div>
-</button>
-
-<!-- CARD 04: Logistics & Transportation -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Logistics &amp; Transportation" data-key="logistics" id="card-logistics" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
+<!-- Card 3: I move -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Logistics &amp; Transportation" data-key="logistics" id="card-logistics" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-2xl">local_shipping</span>
 </span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
-</div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Logistics &amp; Transportation</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Move</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I provide transport, distribution or storage capabilities.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Transit &amp; Corridors</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I move</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Logistics / Transport</p>
 </div>
 </button>
 
-<!-- CARD 05: Businesses & Processors -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Businesses &amp; Processors" data-key="businesses" id="card-businesses" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-2xl">corporate_fare</span>
+<!-- Card 4: I sell -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Retailers &amp; Traders" data-key="retailers" id="card-retailers" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">storefront</span>
 </span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
-</div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Businesses &amp; Processors</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Operate</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I represent a business that sources, handles or processes agricultural produce.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Commercial Procurement</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I sell</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Retailer / Trader</p>
 </div>
 </button>
 
-<!-- CARD 06: Investors & Strategic Partners -->
-<button aria-pressed="false" class="stakeholder-card text-left p-6 sm:p-7 rounded-2xl bg-surface border-2 border-outline-variant/40 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden" data-category="Investors &amp; Strategic Partners" data-key="investors" id="card-investors" type="button">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center border border-outline-variant/30 group-hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-2xl">trending_up</span>
+<!-- Card 5: I operate -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Businesses &amp; Processors" data-key="businesses" id="card-businesses" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">factory</span>
 </span>
-<span class="selected-indicator hidden text-secondary font-bold text-label-sm inline-flex items-center gap-1 bg-secondary-container/60 px-2.5 py-1 rounded-full">
-<span class="material-symbols-outlined text-base">check_circle</span>
-              Selected
-            </span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I operate</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Business / Processing</p>
 </div>
-<div>
-<div class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Investors &amp; Strategic Partners</div>
-<h3 class="text-headline-sm font-headline-sm text-primary font-bold">I Invest / Partner</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-            I'm interested in investing, collaborating or building strategic partnerships.
-          </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-primary font-bold">
-<span class="text-on-surface-variant font-medium">Ecosystem Scalability</span>
-<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+
+<!-- Card 6: I invest / Partner -->
+<button aria-pressed="false" class="stakeholder-card text-left p-5 rounded-2xl bg-white border border-outline-variant/60 hover:border-secondary hover:shadow-md transition-all duration-200 flex items-start gap-4 group cursor-pointer" data-category="Investors &amp; Strategic Partners" data-key="investors" id="card-investors" type="button">
+<span class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</span>
+<div class="min-w-0">
+<p class="text-base font-bold text-primary leading-tight">I invest / Partner</p>
+<p class="text-sm text-on-surface-variant mt-0.5">Investor / Institution</p>
 </div>
 </button>
 </div>
-</div>
-</section>
 
-<!-- ==================================================
-     SECTION C — THE CONNECTION OPPORTUNITY (DYNAMIC CONTEXTUAL BANNER)
-     ================================================== -->
-<section class="py-12 md:py-16 bg-surface-container-low/50 border-b border-outline-variant/30 transition-all duration-300" id="opportunity-section">
-<div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16">
-<div class="bg-surface-container-lowest border-2 border-secondary/30 rounded-2xl md:rounded-3xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-<div class="lg:col-span-8 space-y-4">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-primary text-label-sm font-label-sm font-bold">
-<span class="material-symbols-outlined text-base">explore</span>
-<span id="opp-badge">Connection Opportunity</span>
-</div>
-<h3 class="text-headline-sm md:text-headline-md font-headline-sm md:font-headline-md text-primary tracking-tight font-bold" id="opp-headline">
-              Select your role above to explore your connection pathway
-            </h3>
-<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed" id="opp-description">
-              Every participant in agriculture has a distinct role in building a dependable supply corridor. Once you select a category, we outline the exact collaboration points we can explore together.
-            </p>
-<div class="pt-2 flex flex-wrap gap-2.5" id="opp-touchpoints">
-<!-- Dynamic pills populated by JavaScript -->
-</div>
-</div>
-<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-stretch lg:items-end justify-center gap-3">
-<a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary px-7 py-3.5 rounded-lg text-label-lg font-label-lg hover:bg-secondary transition-colors duration-200 shadow-sm font-bold" href="#connection-form" id="opp-continue-btn">
-<span>Continue to Conversation</span>
-<span class="material-symbols-outlined text-base">arrow_downward</span>
+<!-- Primary Action Button: Let's start a conversation -->
+<a class="mt-6 w-full py-4 px-6 rounded-xl bg-[#174D32] hover:bg-[#106c3c] text-white font-bold text-center flex items-center justify-center gap-2 transition-all duration-200 shadow-sm text-base group" href="#connection-form" id="start-convo-btn">
+<span>Let's start a conversation</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
-<button class="inline-flex items-center justify-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors py-2 px-3" id="opp-change-btn" type="button">
-<span class="material-symbols-outlined text-sm">tune</span>
-<span>Change Role Selection</span>
-</button>
 </div>
-</div>
-</div>
+
 </div>
 </section>
 
 <!-- ==================================================
-     SECTION D — START THE CONVERSATION (COMPACT CONVERSION FORM & VERIFIED DIRECT DETAILS)
+     START THE CONVERSATION (FORM & DIRECT DETAILS)
+     Directly accessible on scroll or via "Let's start a conversation"
      ================================================== -->
-<section class="py-16 md:py-24 bg-surface" id="connection-form">
+<section class="py-16 md:py-20 bg-surface border-t border-outline-variant/30" id="connection-form">
 <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 
@@ -684,22 +379,22 @@
 </div>
 </div>
 
-<!-- Row 3: Area of Interest (Pre-selected from earlier, editable) -->
+<!-- Row 3: Area of Interest (Synced with 6 cards, editable) -->
 <div class="space-y-1.5">
 <div class="flex items-center justify-between">
 <label class="block text-label-md font-label-md text-on-surface font-semibold" for="areaOfInterest">
                     Area of Interest / Stakeholder Role <span class="text-error">*</span>
 </label>
-<span class="text-[11px] text-secondary font-semibold" id="role-sync-hint">Carried forward from selection</span>
+<span class="text-[11px] text-secondary font-semibold" id="role-sync-hint">Choose above or select here</span>
 </div>
 <select class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-medium" id="areaOfInterest" name="areaOfInterest" required="">
-<option disabled="" value="">Select your role or primary focus area</option>
-<option value="Farmers &amp; FPOs">I Grow — Farmers &amp; Farmer Producer Organisations</option>
-<option value="Agricultural Suppliers">I Supply — Seeds, Nutrients, Hardware &amp; Inputs</option>
-<option value="Retailers &amp; Traders">I Sell — Retailers, Wholesalers &amp; Mandi Traders</option>
-<option value="Logistics &amp; Transportation">I Move — Transportation, Transit &amp; Warehousing</option>
-<option value="Businesses &amp; Processors">I Operate — Food Businesses, Processors &amp; Commercial Buyers</option>
-<option value="Investors &amp; Strategic Partners">I Invest / Partner — Strategic Collaborations &amp; Infrastructure</option>
+<option disabled="" selected="" value="">Select your role or primary focus area</option>
+<option value="Farmers &amp; FPOs">I grow — Farmer / FPO</option>
+<option value="Agricultural Suppliers">I supply — Agricultural inputs &amp; equipment</option>
+<option value="Logistics &amp; Transportation">I move — Logistics / Transport &amp; Storage</option>
+<option value="Retailers &amp; Traders">I sell — Retailer / Trader &amp; Mandi buyer</option>
+<option value="Businesses &amp; Processors">I operate — Business / Processing</option>
+<option value="Investors &amp; Strategic Partners">I invest / Partner — Investor / Institution</option>
 <option value="General Agricultural Enquiry">Other Agricultural Collaboration</option>
 </select>
 </div>
@@ -723,7 +418,7 @@
 
 <!-- Submit CTA -->
 <div class="pt-3">
-<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary-container text-on-primary text-label-lg font-label-lg px-9 py-4 rounded-xl hover:bg-secondary transition-all duration-200 active:scale-[0.99] shadow-sm font-bold group" type="submit">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary-container text-on-primary text-label-lg font-label-lg px-9 py-4 rounded-xl hover:bg-secondary transition-all duration-200 active:scale-[0.99] shadow-sm font-bold group cursor-pointer" type="submit">
 <span>Let's Make This Connection</span>
 <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
@@ -806,7 +501,7 @@
 </div>
 </div>
 
-<!-- Guerrilla Networking / Visiting Card QR Welcome Card -->
+<!-- Visiting Card QR Welcome Card -->
 <div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-6 sm:p-7 space-y-3.5 shadow-2xs">
 <div class="flex items-center gap-3">
 <div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center shrink-0">
@@ -818,11 +513,11 @@
 </div>
 </div>
 <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              If you scanned the QR code from our visiting card or met us during an agritech conference, investor summit, or startup meetup, we welcome you to our ecosystem. Use the interactive picker above or write to us directly to follow up on our conversation.
+              If you scanned the QR code from our visiting card or met us during an agritech conference, investor summit, or startup meetup, we welcome you to our ecosystem. Select your role above or write directly to our leadership team.
             </p>
 </div>
 
-<!-- Credibility & Respect Statement -->
+<!-- Professional Discretion Statement -->
 <div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-6 text-on-surface-variant text-body-xs font-body-xs leading-relaxed space-y-2">
 <div class="flex items-center gap-2 text-primary font-bold text-label-sm uppercase tracking-wide">
 <span class="material-symbols-outlined text-secondary text-base">verified_user</span>
@@ -953,113 +648,46 @@
       const STAKEHOLDERS = {
         farmers: {
           key: 'farmers',
-          name: 'I Grow',
+          name: 'I grow',
           category: 'Farmers & FPOs',
-          oppBadge: 'Grower & Producer Linkage',
-          oppHeadline: 'Looking to connect your produce with new market opportunities?',
-          oppDescription: 'Agri2Connect connects grower output directly with verified commercial demand corridors, reducing intermediary price friction and providing predictable off-take.',
-          touchpoints: [
-            'Harvest scheduling & produce intake',
-            'Local procurement aggregation',
-            'Transparent grade specifications'
-          ],
-          nodesToHighlight: ['farmers', 'procurement', 'aggregation', 'suppliers'],
-          formPlaceholder: 'Tell us about your crop varieties, harvest seasons, estimated monthly volumes, or FPO membership...'
+          placeholder: 'Tell us about your crop varieties, harvest seasons, estimated volumes, or FPO details...'
         },
         suppliers: {
           key: 'suppliers',
-          name: 'I Supply',
+          name: 'I supply',
           category: 'Agricultural Suppliers',
-          oppBadge: 'Input & Technology Distribution',
-          oppHeadline: 'Interested in reaching more agricultural businesses?',
-          oppDescription: 'Coordinate input access—seeds, organic nutrients, irrigation, and biological protection—directly into connected producer networks and farm clusters.',
-          touchpoints: [
-            'Catalog & inventory distribution',
-            'Timely input staging near farm clusters',
-            'Biological & nutrient packages'
-          ],
-          nodesToHighlight: ['suppliers', 'farmers', 'services'],
-          formPlaceholder: 'Share the types of agricultural inputs, equipment, or agro-chemical products your organisation supplies...'
-        },
-        retailers: {
-          key: 'retailers',
-          name: 'I Sell',
-          category: 'Retailers & Traders',
-          oppBadge: 'Retail & Wholesale Procurement',
-          oppHeadline: 'Looking for dependable agricultural produce sourcing?',
-          oppDescription: 'Source fresh agricultural commodities directly against verified commercial specifications, with scheduled morning dispatch and consistent grading.',
-          touchpoints: [
-            'Recurring daily requirement mapping',
-            'Direct mandi & local market dispatch',
-            'Grade consistency & transparent pricing'
-          ],
-          nodesToHighlight: ['retailers', 'consumers', 'logistics', 'aggregation', 'procurement'],
-          formPlaceholder: 'List your weekly produce categories (e.g. tomatoes, greens, onions), required grades, and preferred delivery windows...'
+          placeholder: 'Share the types of agricultural inputs, equipment, or products you supply...'
         },
         logistics: {
           key: 'logistics',
-          name: 'I Move',
+          name: 'I move',
           category: 'Logistics & Transportation',
-          oppBadge: 'Transport & Storage Fleet',
-          oppHeadline: 'Have transportation, warehousing or distribution capabilities to offer?',
-          oppDescription: 'Partner on first-mile rural collection, scheduled regional corridors, cold-storage holding, and last-mile retail distribution.',
-          touchpoints: [
-            'Transit corridor capacity mapping',
-            'Refrigerated & ambient vehicle routes',
-            'Storage consolidation hubs'
-          ],
-          nodesToHighlight: ['logistics', 'storage', 'aggregation', 'retailers'],
-          formPlaceholder: 'Detail your vehicle fleet types, operating routes/corridors, warehousing capacity, or temperature-controlled transit...'
+          placeholder: 'Detail your transport fleet, transit routes, or warehousing capabilities...'
+        },
+        retailers: {
+          key: 'retailers',
+          name: 'I sell',
+          category: 'Retailers & Traders',
+          placeholder: 'List your recurring produce requirements, preferred grades, or retail volumes...'
         },
         businesses: {
           key: 'businesses',
-          name: 'I Operate',
+          name: 'I operate',
           category: 'Businesses & Processors',
-          oppBadge: 'Commercial Processing & Enterprise',
-          oppHeadline: 'Looking to strengthen your agricultural sourcing and supply network?',
-          oppDescription: 'Establish structured off-take agreements with farm-gate traceability, quality assay integrity, and volume predictability for FMCG, hospitality, and food processing.',
-          touchpoints: [
-            'Direct source traceability',
-            'Contracted procurement schedules',
-            'Industrial batch consistency'
-          ],
-          nodesToHighlight: ['businesses', 'procurement', 'storage', 'logistics', 'payments'],
-          formPlaceholder: 'Describe your commercial requirements, processing capacity, commodity specifications, and delivery expectations...'
+          placeholder: 'Describe your commercial sourcing, processing capacity, or enterprise requirements...'
         },
         investors: {
           key: 'investors',
-          name: 'I Invest / Partner',
+          name: 'I invest / Partner',
           category: 'Investors & Strategic Partners',
-          oppBadge: 'Strategic & Ecosystem Partnership',
-          oppHeadline: 'Interested in building the future of agricultural commerce?',
-          oppDescription: 'Collaborate with our founding team as we build demand-first physical and digital connectivity across India\'s agricultural value chain.',
-          touchpoints: [
-            'Unit economics & corridor expansion',
-            'Demand-first pilot infrastructure',
-            'Agritech ecosystem syndication'
-          ],
-          nodesToHighlight: ['farmers', 'procurement', 'aggregation', 'storage', 'logistics', 'retailers', 'consumers', 'suppliers', 'services', 'businesses', 'payments'],
-          formPlaceholder: 'Share your strategic focus, investment interests, partnership ideas, or areas where you see synergies with Agri2Connect...'
+          placeholder: 'Share your strategic focus, investment interests, or partnership ideas with Agri2Connect...'
         }
       };
 
       let activeCategoryKey = null;
 
-      // 4. Ecosystem & Stakeholder DOM Elements
+      // 4. Stakeholder DOM Elements & Form Elements
       const cards = document.querySelectorAll('.stakeholder-card');
-      const ecoNodes = document.querySelectorAll('.eco-node');
-      const ecoStatusText = document.getElementById('ecosystem-status-text');
-      const resetEcoBtn = document.getElementById('reset-eco-btn');
-
-      // Opportunity Elements
-      const oppBadge = document.getElementById('opp-badge');
-      const oppHeadline = document.getElementById('opp-headline');
-      const oppDescription = document.getElementById('opp-description');
-      const oppTouchpoints = document.getElementById('opp-touchpoints');
-      const oppChangeBtn = document.getElementById('opp-change-btn');
-      const oppContinueBtn = document.getElementById('opp-continue-btn');
-
-      // Form Elements
       const form = document.getElementById('contactForm');
       const areaOfInterestSelect = document.getElementById('areaOfInterest');
       const messageTextarea = document.getElementById('message');
@@ -1079,47 +707,14 @@
         cards.forEach(card => {
           const isSelected = card.getAttribute('data-key') === key;
           card.setAttribute('aria-pressed', String(isSelected));
-          const indicator = card.querySelector('.selected-indicator');
           if (isSelected) {
             card.classList.add('border-secondary', 'bg-secondary-container/20', 'shadow-md', 'ring-2', 'ring-secondary');
-            card.classList.remove('border-outline-variant/40', 'bg-surface');
-            if (indicator) indicator.classList.remove('hidden');
+            card.classList.remove('border-outline-variant/60', 'bg-white');
           } else {
             card.classList.remove('border-secondary', 'bg-secondary-container/20', 'shadow-md', 'ring-2', 'ring-secondary');
-            card.classList.add('border-outline-variant/40', 'bg-surface');
-            if (indicator) indicator.classList.add('hidden');
+            card.classList.add('border-outline-variant/60', 'bg-white');
           }
         });
-
-        // Update Ecosystem Nodes
-        ecoNodes.forEach(node => {
-          const nodeKey = node.getAttribute('data-eco-node');
-          const shouldHighlight = data.nodesToHighlight.includes(nodeKey);
-          if (shouldHighlight) {
-            node.classList.add('is-active', 'border-secondary', 'bg-surface-container-lowest', 'ring-2', 'ring-secondary/50');
-            node.classList.remove('is-dimmed', 'border-outline-variant/40');
-          } else {
-            node.classList.add('is-dimmed');
-            node.classList.remove('is-active', 'border-secondary', 'ring-2', 'ring-secondary/50');
-          }
-        });
-
-        if (ecoStatusText) {
-          ecoStatusText.textContent = `Viewing Pathway: ${data.name} (${data.category})`;
-        }
-
-        // Update Section C (The Connection Opportunity)
-        if (oppBadge) oppBadge.textContent = data.oppBadge;
-        if (oppHeadline) oppHeadline.textContent = data.oppHeadline;
-        if (oppDescription) oppDescription.textContent = data.oppDescription;
-        if (oppTouchpoints) {
-          oppTouchpoints.innerHTML = data.touchpoints.map(tp => `
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container border border-secondary/30 text-primary text-label-sm font-label-sm font-semibold">
-              <span class="material-symbols-outlined text-secondary text-base">check</span>
-              ${tp}
-            </span>
-          `).join('');
-        }
 
         // Update Form Values
         if (areaOfInterestSelect) {
@@ -1131,42 +726,20 @@
           }
         }
         if (messageTextarea && !messageTextarea.value.trim()) {
-          messageTextarea.placeholder = data.formPlaceholder;
+          messageTextarea.placeholder = data.placeholder;
         }
         if (roleSyncHint) {
-          roleSyncHint.textContent = `Synced: ${data.name} (${data.category})`;
+          roleSyncHint.textContent = `Selected: ${data.name} (${data.category})`;
         }
 
         if (scrollDown) {
-          const target = document.getElementById('opportunity-section');
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const formSec = document.getElementById('connection-form');
+          if (formSec) {
+            formSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const nameInput = document.getElementById('fullName');
+            if (nameInput) setTimeout(() => nameInput.focus(), 500);
           }
         }
-      }
-
-      // 6. Reset Ecosystem Handler
-      function resetEcosystem() {
-        activeCategoryKey = null;
-        cards.forEach(card => {
-          card.setAttribute('aria-pressed', 'false');
-          card.classList.remove('border-secondary', 'bg-secondary-container/20', 'shadow-md', 'ring-2', 'ring-secondary');
-          card.classList.add('border-outline-variant/40', 'bg-surface');
-          const indicator = card.querySelector('.selected-indicator');
-          if (indicator) indicator.classList.add('hidden');
-        });
-        ecoNodes.forEach(node => {
-          node.classList.remove('is-active', 'is-dimmed', 'border-secondary', 'ring-2', 'ring-secondary/50');
-          node.classList.add('border-outline-variant/40');
-        });
-        if (ecoStatusText) {
-          ecoStatusText.textContent = 'Explore All Nodes or Choose Your Fit';
-        }
-        if (oppBadge) oppBadge.textContent = 'Connection Opportunity';
-        if (oppHeadline) oppHeadline.textContent = 'Select your role above to explore your connection pathway';
-        if (oppDescription) oppDescription.textContent = 'Every participant in agriculture has a distinct role in building a dependable supply corridor. Once you select a category, we outline the exact collaboration points we can explore together.';
-        if (oppTouchpoints) oppTouchpoints.innerHTML = '';
-        if (roleSyncHint) roleSyncHint.textContent = 'Select a role above or choose manually';
       }
 
       // Attach Card Click Listeners
@@ -1175,39 +748,9 @@
           const key = this.getAttribute('data-key');
           selectStakeholder(key, true);
         });
-        // Accessibility: keyboard Enter / Space handled natively on button
       });
 
-      // Attach Eco Node Direct Click Listeners
-      ecoNodes.forEach(node => {
-        node.addEventListener('click', function () {
-          const nodeKey = this.getAttribute('data-eco-node');
-          if (STAKEHOLDERS[nodeKey]) {
-            selectStakeholder(nodeKey, true);
-          } else if (nodeKey === 'procurement' || nodeKey === 'aggregation' || nodeKey === 'storage') {
-            selectStakeholder('farmers', true);
-          } else if (nodeKey === 'consumers') {
-            selectStakeholder('retailers', true);
-          } else if (nodeKey === 'services') {
-            selectStakeholder('suppliers', true);
-          } else if (nodeKey === 'payments') {
-            selectStakeholder('investors', true);
-          }
-        });
-      });
-
-      if (resetEcoBtn) {
-        resetEcoBtn.addEventListener('click', resetEcosystem);
-      }
-
-      if (oppChangeBtn) {
-        oppChangeBtn.addEventListener('click', function () {
-          const section = document.getElementById('find-your-connection');
-          if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      }
-
-      // If user changes dropdown in form directly, sync with stakeholder cards if matched
+      // Dropdown changes in form sync with cards
       if (areaOfInterestSelect) {
         areaOfInterestSelect.addEventListener('change', function () {
           const val = this.value;
@@ -1220,7 +763,7 @@
         });
       }
 
-      // 7. Privacy Notice Modal
+      // 6. Privacy Notice Modal
       const privacyModal = document.getElementById('privacy-modal');
       const openPrivacyBtn = document.getElementById('open-privacy-modal');
       const closePrivacyBtn = document.getElementById('close-privacy-modal');
@@ -1255,7 +798,7 @@
         });
       }
 
-      // 8. Form Validation & Submission Handler
+      // 7. Form Validation & Submission Handler
       if (form) {
         form.addEventListener('submit', function (e) {
           e.preventDefault();
@@ -1290,11 +833,11 @@
             `Stakeholder Connection / Area of Interest: ${areaOfInterest}`,
             `Consent to Business Correspondence: ${consent ? 'Yes' : 'Not ticked'}`,
             '',
-            'Message & Collaboration Exploration:',
+            'Message & Collaboration Details:',
             message,
             '',
             '---',
-            'Enquiry initiated via Agri2Connect Interactive Business Connection Canvas (https://agri2connect.web.app/contactus.html)'
+            'Enquiry initiated via Agri2Connect Business Connection Experience (https://agri2connect.web.app/contactus.html)'
           ];
 
           const mailtoUrl = `mailto:shanmugavardhan5@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
@@ -1313,7 +856,7 @@
         });
       }
 
-      // Check URL parameters (e.g. ?role=farmers or ?role=investors) from external links/QR codes
+      // Check URL parameters (e.g. ?role=farmers or ?role=investors)
       try {
         const params = new URLSearchParams(window.location.search);
         const roleParam = params.get('role');
@@ -1321,7 +864,7 @@
           selectStakeholder(roleParam, false);
         }
       } catch (err) {
-        // Fallback for older browsers
+        // Fallback
       }
     })();
   </script>
